@@ -1,0 +1,54 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col {
+    flex: 1 1;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+  }
+
+  /* portare la navigazione a destra
+
+  1) metodo: si seleziona ciò che rimane a sinistra,
+              in questo caso l'H1 .name e si da un margine destro automatico
+  .name {
+    margin-right: auto;
+  }
+
+  2) metodo: si applica la proprietà space-between con justify-content al contenitore flex principale che contiene i due elementi
+
+   .main-header {
+    justify-content: space-between;
+  }
+  */
+
+   .name {
+    margin-right: auto;
+  }
+
+  .primary {
+    flex: 2 1;
+  }
+}
